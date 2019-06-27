@@ -71,7 +71,7 @@ class ParticleEffectView : View {
                 mPaint.color = ball.color
                 mPaint.alpha = ball.alpha
                 canvas?.drawCircle(ball.point.x.toFloat(), ball.point.y.toFloat(), ball.radius.toFloat(), mPaint)
-                ball.alpha = ball.alpha - 8
+                ball.alpha = ball.alpha - 10
                 ball.radius = ball.radius + 1
                 val rx = RandomUtil.randomInt(-30, 30) + ball.point.x
                 val ry = RandomUtil.randomInt(-30, 30) + ball.point.y
